@@ -1,0 +1,27 @@
+{
+    "version": "0.10.0",
+    "description": "本地查询感知上下文压缩器 (query-aware context compressor, zero-dependency Rust)",
+    "homepage": "https://github.com/spapient/scx",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/spapient/scx/releases/download/v0.10.0/scx-0.10.0-windows-x86_64.zip",
+            "hash": "7ff2d3aabcded8eb3640d5b34167ea451ed600343f1df4205355e4c6a16f9e58"
+        }
+    },
+    "bin": "scx.exe",
+    "checkver": {
+        "github": "https://github.com/spapient/scx"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/spapient/scx/releases/download/v$version/scx-$version-windows-x86_64.zip",
+                "hash": {
+                    "url": "https://github.com/spapient/scx/releases/download/v$version/SHA256SUMS-$version",
+                    "regex": "^([a-fA-F0-9]{64})\\s+scx-$version-windows-x86_64\\.zip$"
+                }
+            }
+        }
+    }
+}
