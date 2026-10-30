@@ -2,7 +2,7 @@
     "version": "0.10.0",
     "description": "本地查询感知上下文压缩器 (query-aware context compressor, zero-dependency Rust)",
     "homepage": "https://github.com/spapient/scx",
-    "license": "MIT",
+    "license": "MIT OR Apache-2.0",
     "architecture": {
         "64bit": {
             "url": "https://github.com/spapient/scx/releases/download/v0.10.0/scx-0.10.0-windows-x86_64.zip",
